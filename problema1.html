@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problema 1</title>
+</head>
+<body>
+
+    <!--
+        INICIO
+
+            LEER CantidadDeAmigos
+            LEER CuentaDeRestaurante 
+            LEER Propina //10%
+            CuentaTotalRestaurante =  CuentaDeRestaurante / 100 (*Propina)
+            ESCRIBIR CantidadIndividualAPagar = CuentaDeRestaurante / CantidadDeAmigos
+
+        FIN
+    -->
+
+    <script type="application/javascript">
+        
+        let CantidadDeAmigos = parseInt(prompt("¿Cúantos amigos son?"));
+        let CuentaDeRestaurante = parseFloat(prompt("¿Cuánto fue por la cuenta del Restaurante?"));
+        let Propina = parseInt(prompt("¿Qué porcentaje quieres dar de propina?"));
+
+        let CuentaTotalRestaurante = CuentaDeRestaurante + (Propina / 100) * CuentaDeRestaurante;
+        let PagoPorAmigo = CuentaTotalRestaurante / CantidadDeAmigos;
+
+        alert("Cada amigo debe pagar la siguiente cantidad: "+PagoPorAmigo);
+
+    </script>
+</body>
+</html>

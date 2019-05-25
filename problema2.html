@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        INICIO
+
+            LEER CostoDeComputadora
+            LEER IVA //16%
+            CostoDeComputadoraConIva = CostoDeComputadora / 100 (*IVA)
+            ESCRIBIR  CostoDeComputadoraConIva
+
+        FIN
+    -->
+
+    <script type="application/javascript">
+        let CostoDeComputadora = parseFloat(prompt("¿Cuánto te cuesta la computadora?"));
+        const iva = 16;
+        let CostoDeComputadoraConIva = CostoDeComputadora / 100 * iva;
+        alert("La computadora te costará esto sumando el IVA: "+CostoDeComputadoraConIva);
+    </script>
+    
+</body>
+</html>

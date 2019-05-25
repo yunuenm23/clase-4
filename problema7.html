@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problema 7</title>
+</head>
+<body>
+    
+    <!--
+        INICIO
+
+            LEER ingreso1, ingreso2
+            LEER gasto1, gasto2, gasto3
+            SumaDeIngresos = ingreso1 + ingreso2
+            TotalDeGastos = gasto1 + gasto2 + gasto3
+            
+            Escribir DineroAlFinDeMes = SumaDeIngresos - TotalDeGastos
+
+        FIN
+    -->
+
+    <script type="application/javascript">
+        let ingreso1 = parseFloat(prompt("¿Cuánto dinero ingresas a mediados del mes?"));
+        let ingreso2 = parseFloat(prompt("¿Cuánto ingresas al fin de mes?"));
+        let gasto1 = parseFloat(prompt("¿Cuánto dinero gastaste a mediados del mes?"));
+        let gasto2 = parseFloat(prompt("¿Cuánto dinero gastaste al fin de mes?"));
+        let gasto3 = parseFloat(prompt("¿Cuánto dinero gastaste de última hora?"));
+        let SumaDeIngresos = ingreso1 + ingreso2;
+        let TotalDeGastos = gasto1 + gasto2 + gasto3;
+        alert("Al fin de mes te queda la siguiente cantidad:"+TotalDeGastos);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        INICIO
+
+            LEER ValorTotalDeMemify
+            LEER IVA // 16%
+            ValorDeMemIfyRestandoIVA = ValorTotalDeMemify - ((IVA / 100) * IVA)
+            
+            ESCRIBIR ValorDeMemIfyRestandoIVA / 2
+            
+        FIN
+    -->
+    <script type="application/javascript">
+        let ValorTotalDeMemify = parseFloat(prompt("¿En cuánto vendieron Memify?"));
+        let iva = 16;
+        let ValorDeMemIfyRestandoIVA = ValorTotalDeMemify - ((iva / 100) * ValorTotalDeMemify);
+        alert("El valor de Memify restándole IVA es: "+ValorDeMemIfyRestandoIVA);
+    </script>
+</body>
+</html>

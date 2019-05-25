@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        INICIO
+
+            LEER DineroDeJuan
+            LEER DineroDeJose
+            LEER DineroDeHerencia
+            DivisionDeHerencia = DineroDeHerencia / 2;
+
+            DineroDeJuanyJose = DineroDeJuan + DineroDeJose
+            DineroDeJuanConHerencia = DineroDeJuan + DivisionDeHerencia
+            DineroDeJoseConHerencia = DineroDeJose + DivisionDeHerencia
+
+            ESCRIBIR  DineroDeJuanyJose, DineroDeJuanConHerencia, DineroDeJoseConHerencia 
+
+        FIN
+    -->
+    
+    <script type="application/javascript">
+        let DineroDeJuan = parseFloat(prompt("¿Cuánto dinero tiene Juan?"));
+        let DineroDeJose = parseFloat(prompt("¿Cuánto dinero tiene José?"));
+        let DineroDeHerencia = prompt("¿Cuánto dinero les quieres heredar?");
+
+        let DivisionDeHerencia = DineroDeHerencia / 2;
+
+        let DineroDeJuanyJose = DineroDeJuan + DineroDeJose;
+        let DineroDeJuanConHerencia = DineroDeJuan + DivisionDeHerencia;
+        let DineroDeJoseConHerencia = DineroDeJose + DivisionDeHerencia;
+
+        alert("Este es el dinero de Juan y José "+DineroDeJuanyJose);
+        alert("Este es el dinero de Juan con su herencia "+DineroDeJuanConHerencia);
+        alert("Este es el dinero de José con su herencia "+DineroDeJoseConHerencia);
+    </script>
+</body>
+</html>
